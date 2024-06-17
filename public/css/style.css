@@ -1,0 +1,187 @@
+/* reset */
+
+/* ======================================== */
+/* === Desactiver les styles par défaut === */
+/* ======================================== */
+
+body,
+p,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+header {
+    height:100vh;
+}
+a {
+    text-decoration: none;
+    /* on enlève le soulignement par défaut du text */
+    color: inherit;
+    /* on dit que la couleur du texte doit être la même que le parent */
+}
+
+ul {
+    list-style-type: none;
+}
+
+/*================================================
+*  Génériques
+*================================================*/
+
+.shadow{
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+/*===============================================
+*   
+=================================================*/
+
+:root{
+    --primary: #123456;
+    --primary-ligh: #425d83;
+    --primary-dark: #000d2d;
+
+    --secondary: #cec826;
+    --secondary-light: #fffb5e;
+    --secondary-dark: #999800;
+}
+
+.navbar{
+    box-sizing: border-box;
+    width: 100vw;
+    background-color: var(--primary);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 2vh 2vw;
+}
+
+.navbar-menu{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.navbar-link{
+    color: white;
+    text-decoration: none;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+.navbar-link:hover{
+    color: var(--secondary);
+}
+
+.container{
+    box-sizing: border-box;
+    width: 100vw;
+    padding: 10vh 5vw;
+}
+
+.hero{
+    box-sizing: border-box;
+    text-align: center;
+    text-transform: uppercase;
+    border: solid 1px var(--primary-ligh);
+    color: var(--primary-ligh);
+    padding: 5vh 5vw;
+    width: 80vw;
+    margin: 0 auto;
+    border-radius: 0.5em;
+
+}
+
+.home{
+    width: 100vw;
+    text-align: center;
+}
+
+.home-pic{
+    width: 40vw;
+    height: auto;
+    border-radius: 0.5em;
+    margin: 2vh 0;
+}
+
+
+/*======================================
+*          Liste
+*=======================================*/
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.card{
+    box-sizing: border-box;
+    margin: 4vh 0;
+    border-radius: 0.5em;
+    background-color: var(--primary-ligh);
+    width: 25vw;
+}
+
+
+
+.card-pic{
+    width: 25vw;
+    height: 25vw;
+}
+
+.card-body{
+    padding: 1vh 1vw;
+    color: white;
+}
+
+.card-caracProp{
+    font-weight: bold;
+    color: var(--secondary);
+}
+
+.card-title{
+    font-weight: bold;
+    font-size: 1.5em;
+    cursor: pointer;
+    margin-bottom: 2vh;
+    transition: .5s ease-in-out;
+}
+
+.card-title:hover{
+    color: var(--secondary);
+}
+
+/*========================================
+*   Details
+===========================================*/
+
+.details{
+    text-align: center;
+}
+
+.details-pic{
+    width: 50vw;
+    
+    border-radius: .5em;
+}
+
+.details-title{
+    color: var(--primary);
+}
+
+.details-p{
+    text-align: left;
+    margin: 1vh 0;
+    line-height: 1.5em;
+}
